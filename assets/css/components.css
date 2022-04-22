@@ -1,0 +1,28 @@
+.cta {
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: white;
+  transition: all .3s ease-in-out;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: white;
+  text-align: center;
+  height: 100%;
+}
+.card .cta {
+  color: var(--red);
+  border: 2px solid black;
+}
+.card .cta:hover {
+  background-color: black;
+  color: white;
+}

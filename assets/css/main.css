@@ -1,0 +1,183 @@
+@import 'variables.css';
+@import 'grid.css';
+@import 'reset.css';
+@import 'components.css';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+header {
+  padding: 0 0 20px;
+  font-weight: bold;
+}
+header ul {
+  list-style: none;
+  margin-left: 20px;
+  padding: 0;
+  display: flex;
+}
+header ul li {
+  padding: 10px 20px;
+}
+header .secondary-nav {
+  border-bottom: 1px solid var(--light-grey);
+}
+header .secondary-nav .inner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .secondary-nav .inner-container li{
+  border-left: 1px solid var(--light-grey);
+}
+header .secondary-nav .inner-container li:last-of-type{
+  border-right: 1px solid var(--light-grey);
+}
+header .logo {
+  max-width: 250px;
+  padding: 10px 0;
+}
+header .primary {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .primary ul li{
+  padding: 10px;
+}
+
+footer {
+}
+
+section.hero {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+  background-color: var(--blue);
+  min-height: 400px;
+}
+section.hero.center-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+section.hero .header {
+  color: white;
+  background-color: var(--blue);
+  font-size: clamp(40px, 5vw, 100px);
+  padding: 20px;
+  margin: 0 0 15px;
+}
+section.hero .intro {
+  background-color: white;
+  color: var(--green);
+  padding: 20px;
+  margin: 0 0 15px;
+  max-width: 50%;
+  font-size: 20px;
+}
+section.hero .cta {
+  color: var(--red);
+}
+section.text-image .image {
+  height: 100%;
+}
+section.text-image .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+section.text-image .text {
+  padding: 50px 30px;
+  color: white;
+  background-color: var(--green);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+section.text-image .text .main-content {
+  font-size: 25px;
+}
+section.text-image .text .cta {
+  border: 2px solid white;
+  color: white;
+  background-color: transparent;
+}
+section.text-image .text .cta:hover {
+  background-color: white;
+  color: var(--green);
+}
+
+section.look-up {
+  background-color: var(--light-grey);
+  padding: 50px 0;
+}
+section.look-up .search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  font-size: 25px;
+  background-color: white;
+}
+section.look-up .search select {
+  border: 0;
+  border-bottom: 2px solid var(--blue);
+  color: var(--blue);
+  margin: 0 15px;
+}
+section.look-up .search .cta {
+  background-color: var(--red);
+  border: 2px solid var(--red);
+  color: white;
+  font-size: 16px;
+}
+section.look-up .search .cta:hover {
+  background-color: white;
+  color: var(--red);
+}
+
+section.blog-panel {
+  background-color: var(--blue);
+  padding: 50px 0;
+}
+section.blog-panel .intro {
+  color: white;
+}
+section.blog-panel .cta-button {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0;
+}
+section.blog-panel .cta-button .cta {
+  color: var(--red);
+}
+section.blog-panel .cta-button .cta:hover {
+  color: white;
+  background-color: var(--red);
+}
+
+section.events {
+  background-color: var(--light-grey);
+  padding: 50px 0;
+}
+section.events .card.event {
+  border: 1px solid var(--green);
+}
+section.events .card.event.disable-event {
+  border: 1px solid grey;
+  background-color: grey;
+  color: var(--light-grey);
+}
+section.events .card.event .location {
+  margin-top: auto;
+}
