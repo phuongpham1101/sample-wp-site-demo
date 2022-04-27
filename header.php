@@ -48,10 +48,14 @@
               </a>
 						</div>
 						<div class="col-9 primary">
-							<nav>
+							<nav class="desktop">
 								<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => '', ) ); ?>
 							</nav>
+              <a href="#" class="menu-icon"><span></span><span></span><span></span><span></span></a>
 						</div>
 					</div>
 				</div>
+        <nav class="mobile">
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => '', ) ); ?>
+        </nav>
 			</header>

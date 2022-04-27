@@ -2,50 +2,11 @@
 @import 'grid.css';
 @import 'reset.css';
 @import 'components.css';
+@import 'header.css';
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-}
-
-header {
-  padding: 0 0 20px;
-  font-weight: bold;
-}
-header ul {
-  list-style: none;
-  margin-left: 20px;
-  padding: 0;
-  display: flex;
-}
-header ul li {
-  padding: 10px 20px;
-}
-header .secondary-nav {
-  border-bottom: 1px solid var(--light-grey);
-}
-header .secondary-nav .inner-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header .secondary-nav .inner-container li{
-  border-left: 1px solid var(--light-grey);
-}
-header .secondary-nav .inner-container li:last-of-type{
-  border-right: 1px solid var(--light-grey);
-}
-header .logo {
-  max-width: 250px;
-  padding: 10px 0;
-}
-header .primary {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-header .primary ul li{
-  padding: 10px;
 }
 
 footer {
@@ -80,12 +41,22 @@ section.hero .intro {
   color: var(--green);
   padding: 20px;
   margin: 0 0 15px;
-  max-width: 50%;
   font-size: 20px;
+}
+@media screen and (min-width: 470px) {
+  section.hero .intro {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  section.hero .intro {
+    max-width: 50%;
+  }
 }
 section.hero .cta {
   color: var(--red);
 }
+
 section.text-image .image {
   height: 100%;
 }
@@ -128,12 +99,21 @@ section.look-up .search {
   padding: 30px;
   font-size: 25px;
   background-color: white;
+  text-align: center;
+}
+@media screen and (max-width: 760px) {
+  section.look-up .search {
+    flex-direction: column;
+  }
+  section.look-up .search .cta {
+    margin: 20px 0 0;
+  }
 }
 section.look-up .search select {
   border: 0;
   border-bottom: 2px solid var(--blue);
   color: var(--blue);
-  margin: 0 15px;
+  margin: 15px;
 }
 section.look-up .search .cta {
   background-color: var(--red);

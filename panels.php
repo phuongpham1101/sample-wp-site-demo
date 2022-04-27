@@ -18,12 +18,12 @@ $text_img = get_field('text_and_image_panel');
 if ($text_img): ?>
   <section class="text-image">
     <div class="grid">
-      <div class="col-sm-6 no-padding">
+      <div class="col-md-6 no-padding">
         <div class="image">
           <img src="<?php echo esc_url( $text_img['image']['url'] );?>" alt="<?php echo esc_attr( $text_img['image']['alt'] ); ?>" />
         </div>
       </div>
-      <div class="col-sm-6 no-padding">  
+      <div class="col-md-6 no-padding">  
         <div class="text">
           <?php echo $text_img['text_content']; ?>
         </div>
@@ -40,16 +40,18 @@ if ($look_up): ?>
         <?php echo $look_up['introduction']; ?>
       </div>
       <div class="search">
-        I am 
-        <select name="person">
-          <option>an Individual</option>
-          <option>a Group</option>
-        </select>
-        and I
-        <select name="action">
-          <option>want to learn</option>
-          <option>want to teach</option>
-        </select>
+        <div>
+          I am 
+          <select name="person">
+            <option>an Individual</option>
+            <option>a Group</option>
+          </select>
+          and I
+          <select name="action">
+            <option>want to learn</option>
+            <option>want to teach</option>
+          </select>
+        </div>
         <a href="#"><div class="cta">Start now</div></a>
       </div>
     </div>
